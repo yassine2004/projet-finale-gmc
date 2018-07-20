@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Y.game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+ href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">M.avion</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li ><a href="index.html" id="home">acceuil</a></li>
+                <li><a href="avion.html" id="loc">avions a louer</a></li>
+                <li class="active" ><a href="contact.html" id="cont">contact</a></li>
+                
+            </ul>
+            </div>
+    </nav>
+
+    
+    <div class="container" id="contact">
+        <!---heading---->
+            <header class="heading"> Registration-Form</header><hr></hr>
+           <!---Form starting----> 
+           <div class="row ">
+            <!--- For Name---->
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-4">
+                              <label class="firstname">First Name :</label> </div>
+                        <div class="col-xs-8">
+                            <input type="text" name="fname" id="fname" placeholder="Enter your First Name" class="form-control ">
+                    </div>
+                     </div>
+                </div>
+                
+                
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <label class="lastname">Last Name :</label></div>
+                       <div class ="col-xs-8">	 
+                            <input type="text" name="lname" id="lname" placeholder="Enter your Last Name" class="form-control last">
+                       </div>
+                    </div>
+                </div>
+            <!-----For email---->
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <label class="mail" >Email :</label></div>
+                        <div class="col-xs-8"	>	 
+                             <input type="email" name="email"  id="email"placeholder="Enter your email" class="form-control" >
+                        </div>
+                    </div>
+                </div>
+            <!-----For Password and confirm password---->
+                 <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                  <label class="pass">Password :</label></div>
+                         <div class="col-xs-8">
+                                <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-control">
+                        </div>
+                 </div>
+                 </div>
+                 
+            <!-----------For Phone number-------->
+                <div class="col-sm-12">
+                    <div class ="row">
+                        <div class="col-xs-4 ">
+                          <label class="gender">Gender:</label>
+                        </div>
+                    
+                        <div class="col-xs-4 male">	 
+                            <input type="radio" name="gender"  id="gender" value="boy">Male</input>
+                        </div>
+                        
+                        <div class="col-xs-4 female">
+                            <input type="radio"  name="gender" id="gender" value="girl" >Female</input>
+                        </div>
+                   
+                      </div>
+                    <div class="col-sm-12">
+                        <div class="btn btn-warning">Submit</div>
+                  </div>
+                </div>
+            </div>	 
+                         
+                
+       </div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>M.avion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style3.css" />
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet"
+href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+ crossorigin="anonymous">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+</head>
+<body>
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">M.avion</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li ><a href="index.html" id="home">acceuil</a></li>
+                    <li class="active"><a href="#" id="loc">avions a louer</a></li>
+                    <li><a href="contact.html" id="cont">contact</a></li>
+                </ul>
+                </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="row">
+                        <div class="col-lg-4 img-clickable" width="100%">
+                            <img src="res/AA8.jpg" class="project-image" width="100%">
+                            <p class="project-info hidden">ism</p>
+                            <p class="project-details hidden">lorem</p>
+                            <p class="project-client hidden">20.000 DT</p>
+                        </div>
+                        <div class="col-lg-4 img-clickable" width="100%">
+                                <img src="res/AA8.jpg" class="project-image" width="100%">
+                                <p class="project-info hidden">igfhgfhgfhgfsm</p>
+                                <p class="project-details hidden">lzefezforem</p>
+                                <p class="project-client hidden">255.000 DT</p>
+                        </div>
+                        <div class="col-lg-4 img-clickable" width="100%">
+                                <img src="res/AA8.jpg" class="project-image" width="100%">
+                                <p class="project-info hidden">ifvfdvfvefvdfhsm</p>
+                                <p class="project-details hidden">ngh;k;jhj,ghfgfdfkjjtjhg</p>
+                                <p class="project-client hidden">8.000 DT</p>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-4 img-clickable" width="100%">
+                            <img src="res/AA8.jpg" class="project-image" width="100%">
+                            <p class="project-info hidden">ism</p>
+                            <p class="project-details hidden">lorem</p>
+                            <p class="project-client hidden">20.000 DT</p>
+                        </div>
+                        <div class="col-lg-4 img-clickable" width="100%">
+                                <img src="res/AA8.jpg" class="project-image" width="100%">
+                                <p class="project-info hidden">igfhgfhgfhgfsm</p>
+                                <p class="project-details hidden">lzefezforem</p>
+                                <p class="project-client hidden">255.000 DT</p>
+                        </div>
+                        <div class="col-lg-4 img-clickable" width="100%">
+                                <img src="res/AA8.jpg" class="project-image" width="100%">
+                                <p class="project-info hidden">ifvfdvfvefvdfhsm</p>
+                                <p class="project-details hidden">ngh;k;jhj,ghfgfdfkjjtjhg</p>
+                                <p class="project-client hidden">8.000 DT</p>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col-lg-4 img-clickable" width="100%">
+                            <img src="res/AA8.jpg" class="project-image" width="100%">
+                            <p class="project-info hidden">ism</p>
+                            <p class="project-details hidden">lorem</p>
+                            <p class="project-client hidden">20</p>
+                        </div>
+                        <div class="col-lg-4 img-clickable" width="100%">
+                                <img src="res/AA8.jpg" class="project-image" width="100%">
+                                <p class="project-info hidden">igfhgfhgfhgfsm</p>
+                                <p class="project-details hidden">lzefezforem</p>
+                                <p class="project-client hidden">255</p>
+                        </div>
+                        <div class="col-lg-4 img-clickable" width="100%">
+                                <img src="res/AA8.jpg" class="project-image" width="100%">
+                                <p class="project-info hidden">ifvfdvfvefvdfhsm</p>
+                                <p class="project-details hidden">ngh;k;jhj,ghfgfdfkjjtjhg</p>
+                                <p class="project-client hidden">8</p>
+                        </div>
+                </div>
+              
+            </div>
+            <div class="col-lg-3" id="portfolio-item">
+               <img id="img-replace" src="" width="100%" alt="">
+                   <h3 id="project-container"></h3>
+                   <h3 id="details-container"></h3>
+                   <h3 id="client-container"></h3>
+                   <button id="buybtn" class="hidden">Acheter</button>
+            </div>
+        </div>
+        <script>
+        
+$(".img-clickable").click(function(){
+    $("#img-replace").attr("src",$(this).find(".project-image").attr('src'));
+    $("#project-container").html($(this).find(".project-info").html());
+    $("#details-container").html($(this).find(".project-details").html());
+    $("#client-container").html($(this).find(".project-client").html());    
+    $('#buybtn').removeClass('hidden');
+})</script>
+
+     
+</body>
+</html>
